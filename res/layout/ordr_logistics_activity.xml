@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/home_backgroud">
+
+        <FrameLayout
+            android:id="@id/fraHead"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head_bg" >
+
+            <TextView
+                android:id="@+id/head_back_text"
+                style="@style/style_15_EBEBEB_BOLD"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:background="@anim/head_button"
+                android:gravity="center"
+                android:text="订单详情" />
+
+            <TextView
+                style="@style/style_18_BEBEBE_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="账号管理" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fraHead" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <RelativeLayout
+                    android:id="@+id/order_item_rel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@anim/shape_rounded_rectangle"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="发货方式  :"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_color"
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="物流编号："
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_color"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="物流公司："
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_number"
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_count"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="运单号码："
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_number"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:maxLines="2"
+                        android:paddingBottom="30dip"
+                        android:text="物流跟踪："
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_logistice_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_name"
+                        android:layout_alignBottom="@+id/tv_name"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/tv_name"
+                        android:text="快递" />
+
+                    <TextView
+                        android:id="@+id/tv_logistice_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_number"
+                        android:layout_alignLeft="@+id/tv_logistice_number"
+                        android:text="如雷达" />
+
+                    <TextView
+                        android:id="@+id/tv_logistice_movenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView2"
+                        android:layout_alignLeft="@+id/tv_logistice_company"
+                        android:text="020000" />
+
+                    <TextView
+                        android:id="@+id/tv_logistice_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_alignLeft="@+id/tv_logistice_movenumber"
+                        android:paddingBottom="10dip"
+                        android:text="以下信息由物流公司提供,如有疑问查询韵达快运官方网站" />
+
+                    <TextView
+                        android:id="@+id/tv_logistice_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_count"
+                        android:layout_alignLeft="@+id/tv_logistice_method"
+                        android:text="010000" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/style_14_9F9F9F_BOLD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="20dip"
+                    android:text="订单详情 "
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@anim/shape_rounded_rectangle"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="2011-09-29 18:55:26 上海嘉定公司陆州服务部 KH 发往 豫S51467" />
+
+                    <TextView
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:text="2011-09-30 20:45:11 北京中转站" />
+
+                    <TextView
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:text="2011-09-30 北京中转站 进行中转  并发往 北京市丰台区广安门公司" />
+
+                    <TextView
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:text="2011-09-30 23:16:36 北京丰台区广安门公司" />
+
+                    <TextView
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:maxLines="2"
+                        android:text="2011-10-01 08:15:29 北京丰台区广安门公司 进行派件扫描 指定派送业务员" />
+
+                    <TextView
+                        style="@style/style_14_9F9F9F_BOLD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:maxLines="2"
+                        android:text="2011-10-01 18:36:59 北京丰台区广安门公司 派送 由 比尔盖茨 签收" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@id/bottomBar"
+            layout="@layout/bottombar" />
+    </RelativeLayout>

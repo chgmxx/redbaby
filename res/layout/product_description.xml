@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/relTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg" >
+
+        <TextView
+            android:id="@id/titleBack"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/head_back"
+            android:gravity="center"
+            android:text="@string/goback" />
+
+        <TextView
+            android:id="@id/title"
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/prod_detail" />
+
+        <TextView
+            android:id="@+id/putIntoShopcar"
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@anim/head_button"
+            android:gravity="center"
+            android:text="@string/shopcar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+      <!--   <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" >
+
+            <WebView
+                android:id="@+id/wv_product_description"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible" />
+        </FrameLayout>
+ -->
+ 
+ 	<TextView 
+ 	    	android:id="@+id/tv_description"
+ 	    	android:layout_width="match_parent"
+ 	    	android:layout_height="match_parent"
+ 	    	
+ 	    />
+        <include
+            android:id="@id/bottomBar"
+            layout="@layout/bottombar" />
+    </RelativeLayout>
+
+</LinearLayout>

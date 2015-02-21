@@ -1,0 +1,40 @@
+{
+    "cart": {
+        "cart_addup": {
+            "total_count": "3",
+            "total_point": "230",
+            "total_price": "230"
+        },
+        "cart_prom": [
+           "促销信息一",
+           "促销信息二"
+        ],
+        "productlist": [
+            {
+                "color": "红色",
+                "id": "1200001",
+                "name": "雅培金装1",
+                "number": 5,
+                "pic": "",
+                "price": "89",
+                "prodNum": 3,
+                "size": "M",
+                "subtotal": 290.9,
+                "uplimit": "10"
+            },
+            {
+                "color": "红色",
+                "id": "1200002",
+                "name": "宝宝宝贝",
+                "number": 0,
+                "pic": "",
+                "price": "89",
+                "prodNum": 3,
+                "size": "M",
+                "subtotal": 290.9,
+                "uplimit": "10"
+            }
+        ]
+    },
+    "response": "cart"
+}

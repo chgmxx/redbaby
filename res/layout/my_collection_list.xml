@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/limitbuyrelImage"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10.0dip" >
+
+        <ImageView
+            android:id="@+id/limitbuyPicIv"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginTop="1.0dip"
+            android:src="@drawable/product_loading" />
+
+        <ImageView
+            android:id="@+id/limitbuyloadingIv"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginTop="1.0dip"
+            android:src="@drawable/product_loading"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_80" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/style_15_666666_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="15dip"
+            android:text="商品名称" />
+
+        <RelativeLayout
+            android:id="@+id/limitbuyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5dip" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="￥88.00"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_oldprivce"
+                style="@style/style_15_666666_BOLD"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_price"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:text="￥100.00" />
+
+            <ImageView
+                android:layout_width="60dip"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/tv_oldprivce"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/limit_line" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:text="已有8888人评价"
+                android:textColor="@color/darkgray"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@anim/shape_rounded_rectangle"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5.0dip" >
+	
+    <RelativeLayout
+        android:id="@+id/order_item_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/style_14_9F9F9F_BOLD"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="商品名称: " />
+
+        <TextView
+            android:id="@+id/tv_color"
+            style="@style/style_14_9F9F9F_BOLD"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="颜色：" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/style_14_9F9F9F_BOLD"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_color"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="数量：" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="8.0dip"
+            android:layout_height="13.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textPrice"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:textColor="@color/black"
+            style="@style/style_14_9F9F9F_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_count"
+            android:layout_marginLeft="80dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:text="尺码：" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:textColor="@color/black"
+            style="@style/style_14_9F9F9F_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_count"
+            android:layout_alignBottom="@id/tv_count"
+            android:layout_alignLeft="@id/tv_size"
+            android:text="价格：" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
